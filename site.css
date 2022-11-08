@@ -1,0 +1,155 @@
+:root {
+    --color1: #33A8CC;
+    --color2: #447db9;
+    --color3: #C4AF9A;
+    --color4: #33CCA3;
+    --color5: #656839;
+    --color6: #1E1E24;
+    --color7: #FB9F89;
+    --body: #202731;
+}
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: var(--body);
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+/* SECTIONS */
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+}
+
+#portfolio {
+    background-color: var(--color1);
+}
+
+#about {
+    background-color: var(--color2);
+}
+
+#about h2 {
+    margin: 2px;
+}
+
+#about p {
+    text-align: justify;
+    padding: 10px 4rem;
+}
+/* FOOTER */
+
+footer {
+    background-color: var(--color3);
+    color: black;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* WAVES */
+
+.wavePortfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavePortfolio svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 117px;
+}
+
+.wavePortfolio .shape-fill {
+    fill: var(--body);
+}
+
+.waveAbout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waveAbout svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+}
+
+.waveAbout .shape-fill {
+    fill: var(--color1);
+}
+
+.waveContacts {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveContacts svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 98px;
+}
+
+.waveContacts .shape-fill {
+    fill: var(--color3);
+}
