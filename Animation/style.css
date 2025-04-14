@@ -127,3 +127,66 @@ footer {
     text-align: center;
     padding: 0.5rem;
 }
+
+/* WAVES */
+
+.wavePortfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavePortfolio svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 117px;
+}
+
+.wavePortfolio .shape-fill {
+    fill: var(--body);
+}
+
+.waveAbout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waveAbout svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+}
+
+.waveAbout .shape-fill {
+    fill: var(--color1);
+}
+
+.waveContacts {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveContacts svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 98px;
+}
+
+.waveContacts .shape-fill {
+    fill: var(--color3);
+}
