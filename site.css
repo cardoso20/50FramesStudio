@@ -1,9 +1,16 @@
 :root {
-    --color1: #CB2626;
+    /* --color1: #CB2626;
     --color1a:#752727;
     --color2: #272838;
     --color3: #EADEDA;
     --color4: #acadadd8;
+    --color5: #383838bb; */
+
+    --color1a: #FFE55F;
+    --color1:#B8923F;
+    --color2: #0D0E09;
+    --color3: #c9c5cb;
+    --color4: #baacbd;
     --color5: #383838bb;
 }
 
@@ -85,7 +92,7 @@ header button {
     background-color: var(--color1);
     border-radius: 10px;
     border: none;
-    color: var(--color3);
+    color: var(--color2);
     font-family: "MontserratSemibold";
     font-size: 16px;
     cursor: pointer;
@@ -144,7 +151,7 @@ section {
     letter-spacing: 2px;
     z-index: 2;
     font-size: 20px;
-    width: 75%;    
+    width: 75%;
     font-family: "MontserratSemiBold";
 }
 
@@ -410,7 +417,7 @@ font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 1;    
+    opacity: 1;
 }
 
 .schedule-header {
@@ -422,8 +429,8 @@ font-size: 1rem;
 }
 
 #schedule-form {
-    
-    text-align: center;   
+
+    text-align: center;
     right: 0;
     border-radius: 10px;
     width:500px;
@@ -432,7 +439,7 @@ font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 #schedule-form h1 {
@@ -517,4 +524,15 @@ footer hr {
 .footerInfo a:hover {
     color: var(--color1);
     cursor: pointer;
+}
+
+/* CUSTOM */
+.flatpickr-day.selected, .flatpickr-day.nextMonthDay.selected, .flatpickr-day.prevMonthDay.selected {
+    background: var(--color1);
+    border-color: var(--color1);
+    color: white;
+}
+
+.flatpickr-day.today {
+    border-color: var(--color1);
 }

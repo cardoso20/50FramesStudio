@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
     <script src="https://kit.fontawesome.com/1da50cff78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="../scripts/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
     <title>50FramesStudio</title>
@@ -30,7 +32,7 @@
             <span class="schedule-header"><h1>Agende a sua sessão</h1><i class="fa-solid fa-xmark closeModal" onclick="Close()"></i></span>
             <!-- <img src="https://placehold.co/400x400" alt="mapa" /> -->
             <form>
-                <input type="datetime" placeholder="Escolha a data pretendida"/>
+                <input type="text" id="scheduleDate" placeholder="Escolha a data pretendida"/>
                 <input type="email" placeholder="Insira o seu email"/>
                 <input type="text" placeholder="Insira o seu nº de telemóvel"/>
                 <button type="submit">Agendar</button>
